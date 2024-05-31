@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <%- include('./partials/header.ejs') %>
+        
+        <form class="regBody" id="form" method="post">
+            <h2>Registration Form</h2>
+            <div class="regBody_elements">
+                <section class="labels">
+                    <label for="username">Username: </label>
+                    <label for="email">Email: </label>
+                    <label for="pass">Password: </label>
+                </section>
+                <section class="inputs">
+                    <input required type="text" id="username" name="username" autocomplete="off" autofocus>
+                    <input required type="email" id="email" name="email" autocomplete="off">
+                    <input required type="password" id="pass" name="password" autocomplete="off">
+                </section>
+            </div>
+            
+            <section class="but">
+                <button class="loginButton" type="submit" onclick="buttonClick()">Sign Up</button>
+            </section>
+        </form>
+
+        <script src="/script.js"></script>
+
+    </body>
+</html>

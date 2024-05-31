@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <%- include('./partials/header.ejs') %>
+
+        <div class="chat">
+            <div class="chat_messages">
+                <div class="chat_messages_content" id="messages">
+                    <ul id="mes" class="messages"></ul>
+                </div>
+            </div>
+            <div class="chat_input">
+                <form class="chat_form">
+                    <h3 class="clients" id="clients_total"></h3>
+                    <div class="username" id="username"><%= user.username %></div>
+                    <textarea 
+                        class="chat_form-textarea"
+                        id="message_text"
+                        rows="1" autofocus
+                        placeholder="Enter message..."></textarea>
+                    <button id="sendbtn" class="chat_form-submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/scriptchat.js"></script>
+<!-- 
+        <div class="message">
+            <p class="meta">User <span>10:30 am</span></p>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum illo animi velit voluptate fuga?</p>
+        </div>
+        <div class="message">
+            <p class="meta">User2 <span>10:31 am</span></p>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum illo animi velit voa?</p>
+        </div> -->
+
+    </body>
+</html>

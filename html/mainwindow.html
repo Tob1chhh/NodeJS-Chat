@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IVChat</title>
+</head>
+    <body>
+    
+        <header>
+            <img class="logo" src="../src/IV(white).png" alt="IV" title="Good Messenger">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+            <a class="aBut" href="mainwindow.html">
+                <button class="loginButton" id="loginButton">LogIn</button>                
+            </a>
+        </header>
+        
+        <form class="regBody" method="post" id="form" action="chatwindow.html">
+            <h2>Registration Form</h2>
+            <div class="regBody_elements">
+                <section class="labels">
+                    <label for="username">Username: </label>
+                    <label for="email">Email: </label>
+                    <label for="pass">Password: </label>
+                </section>
+                <section class="inputs">
+                    <input type="text" id="username" name="username" autocomplete="off" autofocus>
+                    <input type="email" id="email" name="email" autocomplete="off">
+                    <input type="password" id="pass" name="password" autocomplete="off">
+                </section>
+            </div>
+            
+            <section class="but">
+                <button class="loginButton" type="submit">LogIn</button>
+            </section>
+        </form>
+
+        <script src="../js/script.js"></script>
+
+    </body>
+</html>
